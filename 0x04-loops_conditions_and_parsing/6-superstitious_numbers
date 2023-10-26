@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Iterating 20 times, 4th prints "bad luck from China", 9th "... from Japan", 17th "... from Italy"
+i=1
+while [ $i -le 20 ]; do
+	echo $i
+	if [ $i == 4 ]; then
+		echo "bad luck from China"
+	elif [ $i == 9 ]; then
+		echo "bad luck from Japan"
+	elif [ $i == 17 ]; then
+		echo "bad luck from Italy"
+	fi
+	((i++))
+done
