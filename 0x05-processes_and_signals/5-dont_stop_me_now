@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# killing the 5th file
+kill "$(ps -x | pgrep -f beyond)"
