@@ -17,7 +17,7 @@ echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
 
 sudo sed -i '24i\	rewrite ^/redirect_me https://www.youtube.com/watch?v=Uc5gBC8W0rk&ab_channel=ComputerKnowledgeBase%28bycobuman%29 permanent;' /etc/nginx/sites-available/default
 
-echo "This is not a page" >> /var/www/html/error_404.html
+echo "Ceci n'est pas une page" >> /var/www/html/error_404.html
 sudo sed -i '25i\	error_page 404 /error_404.html;' /etc/nginx/sites-available/default
 
 sudo service nginx restart
