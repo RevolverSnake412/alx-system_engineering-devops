@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Double the number of webservers
+
 function install() {
 	command -v "$1" &> /dev/null
 
