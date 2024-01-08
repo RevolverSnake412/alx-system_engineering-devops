@@ -27,6 +27,9 @@ for dir in /var/www/{html,error}; do
 	fi
 done
 
+echo "Hello World!" > /var/www/html/index.html
+echo "Ceci n'est pas une page" > /var/www/html/error_404.html
+
 sudo cp /etc/nginx/sites-enabled/default nginx-sites-enabled_default.backup
 
 server_config=\
@@ -48,6 +51,8 @@ server_config=\
 			internal;
 		}
 }"
+
+echo "$server_config" | sudo dd status=none of=/etc/nginx/sites-enabled/default
 
 if [ "$(pgrep -c nginx)" -le 0 ]; then
 	sudo service nginx start
