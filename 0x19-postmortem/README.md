@@ -1,4 +1,5 @@
 Bestochy.tech Outage Report: Meow-y Mishap with a Happy Ending!
+
 # Issue Summary:
 Hey FemFam! We encountered a purr-oblem this past Saturday, February 17th, from 2:00 PM to 11:00 PM GMT+1. While most of our admins were catching some much-needed zzz's, a mischievous feline decided to play electrician, resulting in some temporary downtime. No need to worry, though! Our valiant technicians sprang into action to restore service and ensure your Bestochy experience remained top-notch.
 
